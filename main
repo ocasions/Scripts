@@ -2,7 +2,7 @@ getgenv().Evolution = {
   ["Options"] = {
       ["Version"] = "3.1.4-Solara", -- // Dont touch this is to make sure your using the correct table
       ["Internal"] = {
-          ["Enabled"] = true, -- // Shows internal ui for yol.solutions
+          ["Enabled"] = false, -- // Shows internal ui for yol.solutions
       },
       ["Intro"] = true, -- // Will show a short intro
       ["Stats"] = false, -- // Shows debug stats 
@@ -14,11 +14,11 @@ getgenv().Evolution = {
   ["Silent Aim"] = {
       ["Enabled"] = true, -- // Mouse Redirection
       ["Mode"] = "FOV", -- // Select mode to select target (FOV, Target )
-      ["Target Mode Bind"] = "Q", -- // Keybind for Target mode
-      ["Notify"] = true, -- // Sends notifcation when targeting someone
+      ["Target Mode Bind"] = "C", -- // Keybind for Target mode
+      ["Notify"] = false, -- // Sends notifcation when targeting someone
       ["Prediction"] = 0.133, -- // Prediction Value
       ["Hit Chance"] = 100, -- // Hit chance (1-100)
-      ["Target Part"] = "HumanoidRootPart", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
+      ["Target Part"] = "Head", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
       ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
       ["Nearest Part To Cursor"] = false, -- // Sets target part to the nearest body part to your cursor
       ["Closest Point"] = true, -- // Gets the closest point on the target part (not working rn)
@@ -3296,4 +3296,5 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
     Icon = "rbxassetid://18271692040",
     Duration = 2
 })
+
 
